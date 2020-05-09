@@ -21,7 +21,7 @@ p{
 /*icone png*/
 header#cabecalho img#icone{
     position: absolute;
-    left: 950px;
+    left: 900px;
     top: 50px;
 }
 header#cabecalho{
