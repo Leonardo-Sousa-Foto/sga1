@@ -1,0 +1,249 @@
+Git Youtube
+
+Criar uma nova pasta - Projeto
+Entrar na pasta, clicar com o botão direito e abrir o Git Bash Here
+No explorador de arquivos clik em EXIBIR e no intens ocultos.
+
+.git = significa que é um diretório oculto.
+_____
+Se travar aperte a tecla (Q)
+ 
+git version = Saber qual versão do git está estalada.
+
+git config --global user.name"Leonardo Sousa" = Configurar o usuário.
+
+git config --global user.email "leonardodiretordefotografia@gmail.com"
+
+clear = limpa a tela git.
+
+git config user.name = Verificar o nome
+
+git config user.email = Verificar o nome
+
+git config core.editor = Editor padrão.caso aqui o Visual studio
+
+code . = entra no VS
+
+pwd = exibe onde vc está. - ex. /c/user/Leonardo 
+
+cd /c = Para mudar = vai para unidade c.
+cd teste = entra no diretório teste.
+
+ls = Ver que arquivos tem no projeto.
+
+mkdir = cria um diretório(Pasta do projeto).
+
+__________
+Aula 3
+
+Criar Repositórios = abrir uma pasta e abrir Git bach
+
+git init = criar um repositório local
+
+git -a = para exbir o diretório .git
+
+git status = Verificar alguma mudança 
+
+touch = Cria arquivos - ex touch a.txt (Fica em vermelho para adicionar)
+touch teste/exemplo = Cria um arquivo dentro do diretório.
+
+git add = adiciona o arquivo ao container - ex. git add a.txt
+
+git add . = adicionar as alterações
+
+git add * = adiciona todos que estão vermelhos.
+
+git commit -m "comentario x" = Identificar esse container e armazenar no repositório local.
+
+git log = gerenciar o git - ver todos os passos executado.
+
+git log --oneline = ver de uma forma mais simples.
+
+Aula 4
+
+(HEAD -> master) = Pelo head que conseguimos rastrear os commits e recuperar
+uma versão anterior do projeto. é o ponto que seu projeto se encontra no
+grafo de commits.(Sempre vai ser o ultimo commit.)
+
+MASTER é o ramo principal 
+
+git log --graph = Ver o desenho do grafo de commits (o * é o nodos e a linha vermenha liga os nodos).
+
+git commit -am "Escreva um argumento e ja faz o commit" - Adicionou ao container e ja criou o commit.
+
+git branch = Este comando identifica o ramo que o projeto se encontra.
+
+git checkout master = retorna para a ultima versão.
+
+git diff = Dar a ultima revisão e visualizar as mudanças antes do commit.(ultimas diferenças).
+mas quando adicionado ao container o diff não mostra nada. 
+
+git reset --hard ...(+numero do commit) = Para remover um commit.
+
+Tortoi
+
+_________
+Aula 5
+
+git checkout -b teste = Para criar uma nova ramificação do projeto
+
+git checkout master = Retornar ao Ramo Master
+
+git log --oneline --graph = Mostra o Ramo Master
+
+git log --oneline --graph --all = Mostrar o ramo Master e Teste
+
+git merge teste = Unir o ramo teste ao ramo master
+
+git merge Ex. git merge teste = Para unir o ramo master ao ramo teste (fazer a fusão)
+Gerando uma unica versão estavel do projeto.
+
+git remote = Verifica se existe um repositório remoto
+____________
+GITHUB
+
+Entrar no github
+Criar um novo repositório
+Dar um nome para o repositório
+Descrição (opcional)
+Deixar Publico
+Não clicar na caixinha se ja existir um repositorio no computador
+Usar o protocolo HTTPS 
+ 3 opção
+ 1 Se vai criar um repositorio do zero
+ 2 Se ja tem o repositorio local e quer fazer uma copia no github
+ 3 Importar um projeto de outro repositorio
+
+2 Vamos fazer
+Seleciona a primeira linha - Ctrl C 
+No terminal git(botão direito e seleciona Paste)
+Copiado com paste clic enter
+git remote add origin https://github.com/Leonardo_Sousa_Foto/git.git
+
+git remote = mostra origin - adicionou o repositorio remote.
+
+git remote -v = Para mais detalhes do repositorio remote.
+
+Depois seleciona a segunda linha 
+
+Git push -u origin master = Enviar um repositori local para o github
+
+git push - Sincronizar as alterações com os repositórios remoto 
+do github.
+
+Autenticar usuario e senha
+
+Atualizar a pagina github e ver o projeto.
+
+___
+Aula 8 Curso Git Github
+Criar e editar arquivos e pastas direto no Github
+Sincronizando alterações.
+
+Editar no Github - Editar(lapis)
+
+Altera
+Commit
+
+Create new file - Criar novo arquivo.
+Sempre dar o commit
+
+Criar na pasta, Creat´-> Robotica/public_html/|scripts|/fixaMenu.JS
+Commitar
+ 
+Sincronizar com Git
+git pull = sincronizar com github - 
+___________
+
+Aula 9 - Trabalhando um projeto em vários repositórios locais
+resolvendo conflitos
+
+Git fetch = Faz o dowload das alterações que estão no repositório 
+remoto, para eu fazer uma análise do que foi modificado e resolver 
+os problemas de conflitos.
+-Equilave ao git pull, porem ele não faz o merge, as fusões dos
+projetos. 
+
+Github - Clicar clone or download e copiar a url do projeto.
+
+Em outro pc - 
+git clone + Ctrl v
+
+Code . = Criar um arquivo html
+
+Para trabalhar em outro PC
+
+__
+Aula 10 
+
+Como usar o Github como protifólio e ...
+
+___
+Aula 11
+
+Readme.md
+Linguagem de marcação.
+
+# Titulo ninel 1 <h1></h1>
+## Titulo ninel 2 <h2></h2>
+### Titulo ninel 3 <h3></h3>
+#### Titulo ninel 4 <h4></h4>
+##### Titulo ninel 5 <h5></h5>
+###### Titulo ninel 6 <h6></h6>
+
+___________
+Aula 12
+
+Kanban
+___________
+
+Aula 13
+
+Pull request
+____
+
+Aula 14
+
+Selos de metadados Readme
+
+Shilds
+____________
+Aula 15
+
+Instalando e configurando o Git no Linux
+_______
+
+Aula 16
+
+Conectar com eclips
+____
+Aula 17
+
+Hospedar um site estatico gratis na plataforma Github
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
