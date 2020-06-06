@@ -52,3 +52,12 @@ body {
 .sidebar [aria-expanded="true"]{
     background-color: #19222d;
 }
+.sidebar [aria-expanded="true"]{
+    content: "\f0d8";
+}
+.content{
+    width: 100%;
+}
+.titulo{
+    font-size: 2.0rem !important;
+}
