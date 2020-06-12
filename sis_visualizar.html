@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Sis_cadastrar</title>
+        <title>Sis_visualizar</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -80,86 +80,44 @@
                 <div class="list-group-item">
                     <div class="d-flex">
                         <div class="mr-auto p-2">
-                            <h2 class="display-4 titulo">Cadastrar usuário</h2>
+                            <h2 class="display-4 titulo">Usuário</h2>
                         </div>
-                        <a href="sis_listar.html">
-                            <div class="p-2">
-                                <button class="btn btn-outline-info btn-sm">
-                                    Listar
-                                </button>                                
+                        <div class="p-2">
+                            <span class="d-none d-md-block">
+                                <a href="sis_listar.html" class="btn btn-outline-info btn-sm">Listar</a>
+                                <a href="sis_editar.html" class="btn btn-outline-warning btn-sm">Editar</a>
+
+                                <a href="sis_apagar.html" class="btn btn-outline-danger btn-sm" data-toggle="modal" 
+                                   data-target="#apagarRegistro">Apagar</a>
+                            </span>
+                            <div class="dropdown d-block d-md-none">
+                                <button class="btn btn-primary dropdown-toggle btn-sm" type="button" id="acoesListar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Ações
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="acoesListar">
+                                    <a class="dropdown-item" href="sis_listar.html">Listar</a>
+                                    <a class="dropdown-item" href="sis_editar.html">Editar</a>
+
+                                    <a class="dropdown-item" href="sis_apagar.html" data-toggle="modal" data-target="#apagarRegistro">Apagar</a>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div><hr>
-                    <form>
-                        <!--Dados pessoais-->
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label><span class="text-danger">*</span>Nome</label>
-                                <input name="nome" type="text" class="form-control" id="nome" placeholder="Nome completo">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label><span class="text-danger">*</span>E-mail</label>
-                                <input name="email" type="email" class="form-control" id="email" placeholder="E-mail">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label>Senha</label>
-                                <input name="senha" type="password" class="form-control" id="senha" placeholder="senha com 6 caracteres">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label>Confirmar senha</label>
-                                <input name="conf_senha" type="password" class="form-control" id="conf_senha" placeholder="Confirmar a senha">
-                            </div>
-                        </div>
-                        <!--endereço-->
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label>Endereço</label>
-                                <input name="endereco" type="text" class="form-control" id="endereco" placeholder="Rua">
-                            </div>
-                            <div class="form-group col-md-2">
-                                <label>Número</label>
-                                <input name="numero" type="text" class="form-control" id="endereco" placeholder="nº">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label>Complemento</label>
-                                <input name="complemento" type="text" class="form-control" id="complemento" placeholder="Complemento">
-                            </div>
-                        </div>
-                        <!--Regiao-->
-                        <div class="form-row">
-                            <div class="form-group col-md-5">
-                                <label>Estado</label>
-                                <select name="estado" id="estado" class="form-control">
-                                    <option selected>Selecione</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-5">
-                                <label>Cidade</label>
-                                <select name="cidade" id="cidade" class="form-control">
-                                    <option selected>Selecione</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-2">
-                                <label>CEP</label>
-                                <input name="cep" type="text" class="form-control" id="cep" placeholder="CEP">
-                            </div>
-                        </div>
-                        <!--exemplo-->
+                    <dl class="row">
+                        <dt class="col-sm-3">ID</dt>
+                        <dd class="col-sm-9">1</dd>
 
-                        <div class="form-group">
-                            <label>Exemplo 1</label>
-                            <input name="exemplo_1" type="text" class="form-control" id="exemplo_1" placeholder="exemplo_1">
-                        </div>
-                        <p>
-                            <span class="text-danger">* </span>Campo obrigatório
-                        </p>
+                        <dt class="col-sm-3">Nome</dt>
+                        <dd class="col-sm-9">Leonardo Sousa
+                        </dd>
 
-                        <button type="submit" class="btn btn-success">Cadastar</button>
-                    </form>
+                        <dt class="col-sm-3">E-mail</dt>
+                        <dd class="col-sm-9">leo@gmail.com</dd>
+
+                        <dt class="col-sm-3 text-truncate">Data do cadastro</dt>
+                        <dd class="col-sm-9">10/06/2020 18:41:38</dd>
+                    </dl>
                 </div>
-
             </div>
 
             <!-- Janela Modal -->
@@ -175,10 +133,10 @@
                         <div class="modal-body">
                             Tem certeza que deseja excluir o item selecionado?
                         </div>
-
-                        <button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-danger">Apagar</button>
-
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-danger">Apagar</button>
+                        </div>
                     </div>
                 </div>
             </div>
