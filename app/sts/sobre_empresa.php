@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title>Celke</title>
+    <title>SGA</title>
 </head>
 <body>
     <?php
