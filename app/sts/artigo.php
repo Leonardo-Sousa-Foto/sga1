@@ -2,13 +2,16 @@
 if (!isset($seguranca)) {
     exit;
 }
+include_once 'app/sts/header.php';
 ?>    
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
+
 <body>
     <?php
+    include_once 'app/sts/menu.php';
     echo "Página artigo SGA";
+    ?>
+    <?php
+    include_once 'app/sts/rodape.php';
+    include_once 'app/sts/rodape_lib.php';
     ?>
 </body>
