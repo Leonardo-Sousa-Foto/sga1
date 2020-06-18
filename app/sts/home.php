@@ -22,8 +22,8 @@ include_once 'app/sts/header.php';
                     <img class = "first-slide img-fluid" src = "imagens1/ima1.png" class = "d-block w-60" alt = "First slide">
                     <div class = "container">
                         <div class = "carousel-caption text-left">
-                            <h1 class = ".d-none .d-md-block"> </h1>
-                            <p class = ".d-none .d-md-block"></p>
+                            <h1 class = "d-none d-md-block"> </h1>
+                            <p class = "d-none d-md-block"></p>
 
                         </div>
                     </div>
@@ -32,8 +32,8 @@ include_once 'app/sts/header.php';
                     <img class = "second-slide img-fluid" src = "imagens1/ima2.png" class = "d-block w-60" alt = "Second slide">
                     <div class = "container">
                         <div class = "carousel-caption">
-                            <h1 class = ".d-none .d-md-block"></h1>
-                            <p class = ".d-none .d-md-block"></p>
+                            <h1 class = "d-none d-md-block"></h1>
+                            <p class = "d-none d-md-block"></p>
 
                         </div>
                     </div>
@@ -42,8 +42,8 @@ include_once 'app/sts/header.php';
                     <img class = "third-slide img-fluid" src = "imagens1/ima3.png" class = "d-block w-60" alt = "Third slide">
                     <div class = "container">
                         <div class = "carousel-caption text-right">
-                            <h1 class = ".d-none .d-md-block"></h1>
-                            <p class = ".d-none .d-md-block"></p>
+                            <h1 class = "d-none d-md-block"></h1>
+                            <p class = "d-none d-md-block"></p>
 
                         </div>
                     </div>
@@ -60,47 +60,48 @@ include_once 'app/sts/header.php';
         </div>
 
         <!--Main jumbotron for a primary marketing message or call to action -->
+        <?php
+        $result_servico = "SELECT * FROM sts_servicos LIMIT 1";
+        $resultado_servico = mysqli_query($conn, $result_servico);
+        $row_servico = mysqli_fetch_assoc($resultado_servico);
+        ?>
         <div class = "jumbotron servicos">
             <div class = "container">
                 <h2 class = "display-4 text-center" style = "margin-bottom: 40px;">SGA- Sistema de gerenciamento de arquivos
                 </h2>
                 <p>Somos a maior rede nacional na área de gestão documental.</p>
-                <p><a class = "btn btn-primary btn-lg" href = "file:///C:/xampp/htdocs/sga1/login.html" target = "_blank"
+                <p><a class = "btn btn-primary btn-lg" href = "/C:/xampp/htdocs/sga1/login.html" target = "_blank"
                       role = "button">Entrar no sistema &raquo;
                     </a></p>
 
 
-                <h2 class = "display-5 text-center" style = "margin-bottom: 40px;">Qual o problema que você vai resolver?
-                </h2>
+                <h2 class = "display-5 text-center" style = "margin-bottom: 40px;"><?php echo $row_servico['titulo']; ?></h2>
 
                 <!--card-deck-->
+                
 
                 <div class = "card-deck card-servicos">
                     <div class = "card c-left shadow mb-5">
-                        <img src = "imagens1/arq22.jpg" class = "card-img-top" alt = "1">
+                        <img src = "<?php echo pg; ?>/imagens1/arq22.jpg" class = "card-img-top" alt = "1">
                         <div class = "card-body text-center">
-                            <h5 class = "card-title">Organização dos documentos</h5>
-                            <p class = "card-text lead">É um sistema baseado em gerenciamento de arquivos documentais,
-                                para a organização desses documentos nas empresas.</p>
+                            <h5 class = "card-title"><?php echo $row_servico['nome_um']; ?></h5>
+                            <p class = "card-text lead"><?php echo $row_servico['descricao_um']; ?></p>
 
                         </div>
                     </div>
                     <div class = "card c-center shadow mb-5">
-                        <img src = "imagens1/arq66.jpg" class = "card-img-top" alt = "2">
+                        <img src = "<?php echo pg; ?>/imagens1/arq66.jpg" class = "card-img-top" alt = "2">
                         <div class = "card-body text-center ">
-                            <h5 class = "card-title">Saber onde está</h5>
-                            <p class = "card-text lead">Este sistema tem por objetivo resolver este problema de acúmulo de
-                                documentos no qual ocupa muito espaço físico e muitas vezes acaba se perdendo.</p>
+                            <h5 class = "card-title"><?php echo $row_servico['nome_dois']; ?></h5>
+                            <p class = "card-text lead"><?php echo $row_servico['descricao_dois']; ?></p>
 
                         </div>
                     </div>
                     <div class = "card c-right shadow mb-5">
-                        <img src = "imagens1/arq11.jpg" class = "card-img-top" alt = "3">
+                        <img src = "<?php echo pg; ?>/imagens1/arq11.jpg" class = "card-img-top" alt = "3">
                         <div class = "card-body text-center">
-                            <h5 class = "card-title">Facíl de achar</h5>
-                            <p class = "card-text lead">O sistema é planejado para melhorar a demanda de
-                                armazenamento de arquivos físicos, ter mais agilidade na ora de acessar e sendo mais
-                                facil a localização.</p>
+                            <h5 class = "card-title"><?php echo $row_servico['nome_tres']; ?></h5>
+                            <p class = "card-text lead"><?php echo $row_servico['descricao_tres']; ?></p>
 
                         </div>
                     </div>

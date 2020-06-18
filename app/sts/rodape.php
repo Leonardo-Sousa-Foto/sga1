@@ -1,6 +1,6 @@
 <!--Rodape-->
 
-<footer class="footer bg-dark">
+<footer class="footer bg-primary">
     <div class="container text-center">
         @ copyright sga.com.br
     </div>
