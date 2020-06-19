@@ -78,7 +78,7 @@ include_once 'app/sts/header.php';
                 <h2 class = "display-5 text-center" style = "margin-bottom: 40px;"><?php echo $row_servico['titulo']; ?></h2>
 
                 <!--card-deck-->
-                
+
 
                 <div class = "card-deck card-servicos">
                     <div class = "card c-left shadow mb-5">
@@ -109,23 +109,25 @@ include_once 'app/sts/header.php';
             </div>
         </div>
 
-        <!--Inserir espaço de produto no site -->
+        <!--Inserir espaço de segurança no site -->
+        <?php
+        $result_prod_home = "SELECT * FROM sts_prods_homes LIMIT 1";
+        $resultado_prod_home = mysqli_query($conn, $result_prod_home);
+        $row_prod_home = mysqli_fetch_assoc($resultado_prod_home);
+        ?>
         <div class = "jumbotron produto">
             <div class = "container">
-                <h2 class = "display-4 text-center" style = "margin-bottom: 40px;">Segurança</h2>
+                <h2 class = "display-4 text-center" style = "margin-bottom: 40px;"><?php echo $row_prod_home['titulo']; ?></h2>
 
                 <div class = "row featurette">
                     <div class = "col-md-7 seg-text">
-                        <h2 class = "featurette-heading">Conformidade com a legislação</h2>
-                        <p class = "lead">A SGA se preocupa com o cumprimento das normas e garante que seus documentos e
-                            dados não serão violados, pois respeitamos uma rigorosa cadeia de custódia durante todas as
-                            etapas do processo. <br>Confiden­cialidade durante todo processo, desde a coleta até
-                            arquivamento. <br>Proteção à propriedade intelectual, contra o uso indevido de dados e roubo
-                            de informações.</p>
+                        <h2 class = "featurette-heading"><?php echo $row_prod_home['subtitulo']; ?></h2>
+                        <p class = "lead"><?php echo $row_prod_home['descricao']; ?></p>
                     </div>
                     <div class = "col-md-5 seg-img">
-                        <img class = "featurette-image img-fluid mx-auto shadow-lg" width = "500" height = "500"
-                             src = "imagens1/img2.jpg">
+                        <img class="featurette-image img-fluid mx-auto shadow-lg" width="500" height="500"
+                             src="<?php echo pg; ?>/imagens1/img2.jpg" alt="<?php echo $row_prod_home['subtitulo']; ?>">
+
                     </div>
                 </div>
 
@@ -133,17 +135,20 @@ include_once 'app/sts/header.php';
         </div>
 
         <!--Inserir imagem responsiva no site / Cadastro e mail -->
-        <div class = "jumbotron cadastro-email" style = "background-image: url(imagens1/textura2.jpg);">
+        <?php
+        $result_forms_emails = "SELECT * FROM sts_forms_emails LIMIT 1";
+        $resultado_forms_emails = mysqli_query($conn, $result_forms_emails);
+        $row_forms_emails = mysqli_fetch_assoc($resultado_forms_emails);
+        ?>
+        <div class = "jumbotron cadastro-email" style = "background-image: url(<?php echo pg . "/imagens1/form_emails/" . $row_forms_emails['id'] . '/' . $row_forms_emails['imagem']; ?>);">
             <div class = "container">
                 <div class = "email-text">
-                    <h2 class = "display-4 text-center" style = "margin-bottom: 40px;">Receber novidades</h2>
-                    <p class = "lead text-center" style = "margin-bottom: 40px;">A ideia é trabalhar com o nosso sistema
-                        para soluçionar esses problemas, de acúmulo de documentos e a falta de segurança deles,
-                        gerenciando a entrada, o arquivamento a e disponibilização digital.</p>
+                    <h2 class = "display-4 text-center" style = "margin-bottom: 40px;"><?php echo $row_forms_emails['titulo']; ?></h2>
+                    <p class = "lead text-center" style = "margin-bottom: 40px;"><?php echo $row_forms_emails['descricao']; ?></p>
                 </div>
 
                 <div class = "email-form">
-                    <form>
+                    <form action="<?php echo pg; ?>/proc_cad_lead" method="POST">
                         <div class = "form-row justify-content-center">
                             <div class = "col-sm-3 my-1">
                                 <label class = "sr-only">E-mail</label>
@@ -151,21 +156,24 @@ include_once 'app/sts/header.php';
                                     <div class = "input-group-prepend">
                                         <div class = "input-group-text">@</div>
                                     </div>
-                                    <input type = "email" class = "form-control" placeholder = "Seu e-mail">
+                                    <input type="email" name="email" class="form-control" placeholder = "Seu e-mail">
                                 </div>
                             </div>
 
                             <div class = "col-auto my-1">
-                                <button type = "submit" class = "btn btn-primary mb-2">Cadastar</button>
+                                <input type="submit" class="btn btn-primary mb-2" value="<?php echo $row_forms_emails['titulo_botao']; ?>" name="SendCadLead">
                             </div>
                         </div>
 
                     </form>
                 </div>
-                </main>
-                <?php
-                include_once 'app/sts/rodape.php';
-                include_once 'app/sts/rodape_lib.php';
-                ?>
+            </div>
+        </div>
 
-                </body>
+    </main>
+    <?php
+    include_once 'app/sts/rodape.php';
+    include_once 'app/sts/rodape_lib.php';
+    ?>
+
+</body>
