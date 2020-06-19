@@ -175,5 +175,45 @@ include_once 'app/sts/header.php';
     include_once 'app/sts/rodape.php';
     include_once 'app/sts/rodape_lib.php';
     ?>
+    <script>
+        window.sr = ScrollReveal({reset: true});
+        sr.reveal('.c-left', {
+            duration: 300,
+            origin: 'left',
+            distance: '200px'
+        });
+        sr.reveal('.c-center', {
+            duration: 300,
+            origin: 'bottom',
+            distance: '200px'
+        });
+        sr.reveal('.c-right', {
+            duration: 300,
+            origin: 'right',
+            distance: '200px'
+        });
 
+        sr.reveal('.seg-text', {
+            duration: 500,
+            origin: 'left',
+            distance: '100px'
+        });
+        sr.reveal('.seg-img', {
+            duration: 500,
+            origin: 'right',
+            distance: '100px'
+        });
+        sr.reveal('.email-text', {
+            duration: 300,
+            origin: 'left',
+            distance: '300px'
+        });
+        sr.reveal('.email-form', {
+            duration: 500,
+            origin: 'right',
+            distance: '200px'
+        });
+
+
+    </script>
 </body>
