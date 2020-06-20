@@ -29,7 +29,7 @@ include_once 'app/sts/header.php';
                                     consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                             </div>
                             <div class="col-md-5 order-md-1 img_um">
-                                <img class="featurette-image img-fluid mx auto" src="imagens1/audio.png"
+                                <img class="featurette-image img-fluid mx auto" src="imagens1/arq6.jpg"
                                      alt="sobre a empresa um">
                             </div>
                         </div>
@@ -49,7 +49,7 @@ include_once 'app/sts/header.php';
                                     tellus ac cursus commodo.</p>
                             </div>
                             <div class="col-md-5 img_dois">
-                                <img class="featurette-image img-fluid mx auto" src="imagens1/audio.png"
+                                <img class="featurette-image img-fluid mx auto" src="imagens1/arq2.jpg"
                                      alt="sobre a empresa um">
                             </div>
                         </div>
@@ -68,7 +68,7 @@ include_once 'app/sts/header.php';
                                     consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
                             </div>
                             <div class="col-md-5 order-md-1 img_um">
-                                <img class="featurette-image img-fluid mx auto" src="imagens1/audio.png"
+                                <img class="featurette-image img-fluid mx auto" src="imagens1/arq8.jpg"
                                      alt="sobre a empresa um">
                             </div>
                         </div>
@@ -87,7 +87,7 @@ include_once 'app/sts/header.php';
                                     tellus ac cursus commodo.</p>
                             </div>
                             <div class="col-md-5 img_dois">
-                                <img class="featurette-image img-fluid mx auto" src="imagens1/audio.png"
+                                <img class="featurette-image img-fluid mx auto" src="imagens1/arq3.jpg"
                                      alt="sobre a empresa um">
                             </div>
                         </div>
