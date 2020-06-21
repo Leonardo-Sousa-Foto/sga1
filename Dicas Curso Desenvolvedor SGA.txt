@@ -1,0 +1,774 @@
+
+Plano de comunicação - segurança Aula de quinta
+
+PlantText - Diagrama = Coloca o código e ele traduz em caso de uso.
+
+https://m.bancodoempreendedor.com.br/#/
+
+http://localhost/aula/projeto01.php
+
+http://localhost/phpmyadmin/ (Xamp)   (MySQL)
+http://localhost/udemy_aula/
+___
+  PHP
+  http://localhost/celke/home 
+  Bootstrap
+  https://getbootstrap.com/docs/4.5/getting-started/introduction/
+  PHPAdmim
+  http://localhost/phpmyadmin/  
+  PHP
+  http://localhost/sga1/home
+  PHP - Sistema
+  http://localhost/sga1/adm/
+____ 
+
+
+https://app.diagrams.net/#G1nqlSG0aF8Ml-9-XumMo9ZPVP11Flfbmw  (Caso de uso SGA)
+
+http://convert-my-image.com/ImageConverter_Pt = Para converter imagens
+Ligar o wamp64 
+Abrir o Notepad++
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title></title>
+        <style>
+       
+        </style>
+
+    </head>
+    <body>
+        <h1></h1>
+        <?php
+
+        ?>
+
+    </body>
+
+</html>
+___________
+
+Bootstrap
+
+https://getbootstrap.com/docs/4.5/getting-started/introduction/
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Projeto 002</title>
+  </head>
+  <body>
+	<div class="container">
+
+	</div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+__
+
+Bootstrap
+
+Seção 8
+
+Aula 169 - Criar URL Amigavel
+
+Aula 168 - Apresentação
+
+_______
+Seção 7
+
+Aula 140 - SEO básico
+	   http://localhost/celke/
+	   PHP
+	   http://localhost/celke/home  
+           
+	   http://localhost/sga1/sga.php
+           PHP
+           http://localhost/sga1/home
+
+BD
+e - ...
+n.p - Celke - ...
+obs - null
+k - site celke, home, PHP, HTML, CSS, Bootstrap, JavaS...
+des - Home do site desenvolvido no curso de PHP, Mysqli ...
+A - Leonardo
+R -index, follow
+i -.jpg
+tp - sts
+
+
+
+Aula 141 - Criar HTACCESS  URL amigavel.
+
+Aula 142 - URL amigável e nome do artigo no endrerço.
+
+Aula 143 - Carregar páginas cadastradas no BD.
+
+Aula 144 - SEO básico
+
+Aula 145 - Intergrar layout com projeto de URL amígavel
+
+Aula 146 - Salvar dados do carrosel no B.D.
+
+Aula 147 - Carregar carrosel com registro do BD.
+
+Aula 148 - Serviços Celke ok - SGA falta
+
+Aula 149 - Carregar video
+
+Aula 150 - Carrgar produto
+
+Aula 152 - Salvar no BD o email do lead
+
+Aula 153 - Preencher o acordion com informações no BD
+
+Aula 154 - Criar a página sobre empresa com registro no BD.
+
+Aula 163 - Criar o formulário de conato
+
+Aula 164 - 
+
+
+
+__________
+Seção 6
+
+Aula 123 - Introdução
+
+124 - Tela Login
+
+125 - Header dp adm
+
+126 - Menu lateral direito
+
+127 - Menu responsivel 
+
+128 - Inserir icones
+
+129 - Criar link dropdow em menu vertical
+* vendo menu , icone - caret-down
+130 - Criado o Dashboard
+
+131 - Criado o listar usuarios e tabela pra ver a lista.
+
+132 - Criei botão Apagar, visualizar e editar, fiz um botão Dropdow.
+
+133 - Janela modal para confirmar antes  de apagar um registro.
+
+134 - Layout da paginação.
+
+135 - Criar botão cadastrar usuário.
+
+136 - Criar tela de editar usuário.
+
+137 - Criar tela de visualizar usuário.
+
+138 - Tipografia (Dados do usuário) 
+
+
+
+
+
+
+___
+Seção 5 
+
+Aula 107, 108, 109, 110, 111, 112, 113, 114, 115, 
+116, 117, 118, 119, 120, 121, 122, 123, 124 
+
+107 - introdução
+108 - Início do layout do site - Menu
+109 - Carrocel
+___
+Aula 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95
+84
+Container = Usado para envolver todo o conteúdo do site.
+85
+Grid 
+        <div class="row">
+            <div class="col-12 col-sm-6 .col-md-4 col-lg-2 col-xl-6" style="background-color: yellow;">Menu</div>
+            <div class="col-12 col-sm-6 .col-md-8 col-lg-10 col-xl-6">Artigo</div>
+        </div>
+86
+Tipografia = Tipo de letra.
+Fontes, tamanhos e alinhamentos
+
+87 Tabelas 
+
+88 imagens
+<img src="imagem/glass-quadro-homem-mulher.jpg" class="img-fluid" alt="Capa do artigo"><br><br> 
+
+89 Botões
+
+90 Formulario
+
+91 Criar layout do formulário
+
+92 Alerta
+
+93 Paginação
+
+94 Badges
+
+95 Listas
+
+96 navbar
+
+97 Jumbotron
+
+98 Cartão
+
+99 Card - Layout dos cartões
+
+100 Embed = Video no site
+
+101 Janela Modal
+
+102 Passar valor para a janela modal
+
+103 Collapse
+
+104 Carrosel
+
+105 Shadow
+
+106 Conclusão
+________
+Criar layout do sistema 
+
+107
+
+
+
+___
+Aula 82, 83
+
+82
+Introdução
+83
+Primeiros passos para com Bootstrap
+Configurar para uso no servidor interno.
+____________
+file:///C:/xampp/htdocs/udemy_aula/js/
+JavaScript
+
+Aula 81
+
+NodeList(DOM)
+As funções que acessam elementos da pagina HTML retornam um conjunto de elementos denominado NodeList.
+
+Usado o exercicio 80.html e 80.js
+___
+Aula 80
+
+DOM - Document Object Model
+document object model -> Representa os objetos de uma pagina HTML em forma de uma arvore.
+
+("identificação");->Seletor
+document.getElementByName("nome-dos -elementos");-> Varios elementos, formulários
+document.getElementByTagName("span"); -> Tag span pode receber mais de um valor.
+document.getElementByClassName("nome-da-classe"); -> Recebe valor atravez da classe.
+
+checkbox = <input type="checkbox" name="curso" value="html">HTML
+___
+Aula 79
+
+Eventos en JS = Ação feita pelo usuário ou pelo navegador.
+onclick="carCont()"
+function mouseOver() {
+    document.getElementById("mouseAlt").innerHTML = "Retire o mouse"; 
+}
+function mouseOut() {
+    document.getElementById("mouseAlt").innerHTML = "Passe o mouse";   
+}
+
+
+___
+Aula 78
+
+Arrays = Variavel usada para armazenar vários valores.
+length = Traz a quantidade de valor do Array.
+length-1 = Traz o último intem do Array.
+forEach = Para ler o Array completo. ex:frutas.forEach(function(item, indice, array){
+					});
+unshift = Adiciona um item no início do Array.ex: frutas.unshift("Kiwi");
+push = Adiciona um item no final do Array. ex: frutas.push("maça");
+shift = Remover um item no início do Array. ex: frutas.shift();
+pop = Remover um item no final do Array. ex:frutas.pop(); 
+splice = Remover um item pela posição do indice.ex: frutas.splice(pos, n);
+-A partir da posição (pos) em direção ao fim da Array
+(n) define o número de itens a ser remover
+ex: frutas.splice(2,3);                                        
+___
+Aula 77
+
+Objetos em JS 
+
+Objeto é uma coloção de propriedades, com um conjunto de nome e valor.
+ex: Cadeira.Cor=Preta
+    Cadeira.Altura=118
+    Cadeira.Peso=17
+Primeiro indica o objeto e depois a propriedade.
+ex: cadeira.cor
+___
+Aula 76
+
+Estrutura Loop For
+
+for = Repete a execução de um conjunto mais de uma vez.
+for (i = 1; i <= 10; i++){
+    document.write("Numero: "+i+"<br>");
+    total = total +2;
+    document.write("Valor da total: "+total+"<br><hr>");
+}
+___
+Aula 75
+
+Estrutura Loop Do while = Mesmo função que While, mas
+                          Primeiro executa o código e depois verifica a variável,sendo verdadeira, executa novamente.
+do {
+    document.write("numero do cliente: "+inicio+"<br>");
+    inicio++;
+} while (inicio <=10);
+___
+Aula 74
+
+Estrutura Loop While = Para manter uma quantidade de script executando repetidamente.
+                       Primeiro verifica a variável e se verdadeiro e depois executa.
+while (inicio <= 10) {
+    document.write("Numero: "+inicio+ "<br>");
+    inicio++;
+}
+___
+Aula 73
+
+Estrutura condicional switch
+switch(tipo){
+    case 1:
+        document.write("Apartamento");
+        break;
+        document.write("Opção invalida");
+___
+Aula 72
+
+Estrutura condicional if - else if - else
+ex: if(sol){
+       document.write(" Vamos para a praia porque tem sol!<br>"); 
+   }else if(nublado){
+       document.write("Vamos para o Parque<br>");
+   }else{
+       document.write("Vamos ficar em casa que está chovendo, bora estudar!<br>");
+   }
+___
+Aula 71
+
+Funções = São blocos de construção fundamentais e JS
+Um conjunto de instrução que executa uma tarefa.
+ex: function nome_funcao(){
+       //comando
+    }
+    nome_funcao()
+___
+Aula 70
+
+Operador Incremento/Decremento
+
+++
+--
+___
+Aula 69
+
+Operadores Lógicos
+&& = E
+|| = Ou
+ ! = Não 
+___
+Aula 68
+
+Operadores de Comparação
+
+==
+!=
+<
+>
+<=
+>=
+___
+Aula 67
+
+Operadores Atribuição
+
+=  -> Atribição simples
++= -> Atribição com adição
+-= -> Atribição com subtralçao
+*= -> Atribição com multiplicação
+/= -> Atribição com divisão
+%= -> Atribição com modulo
+___
+Aula 65
+
+Constantes - Const = para declarar variáveis constantes, 
+não é alterado.
+ex: const curso="Curso de JavaScript";
+___
+Aula 64
+
+-Variáveis = São usadas para armazenar, recuperar e manipular
+valores que aparecem no código.
+ex: var nome = "Leonardo";
+
+String = Valor entre aspas simples ou duplas;
+Numérico: números;
+Booleano: true(verdadeiro) ou false(falso);
+Imprimir: document.write() -> Dentro suas variaveis e concatenação.
+Concatenar: ("O Aluno "+ nome ", tem idade" + idade".");
+___
+Aula 63
+
+Js = Linguagem de programação
+Usado para manipular comportamento na pagina
+Cliente-side(Lado do cliente)
+
+Criei uma pasta js no : localhost/udemy_aula/js/
+
+Interno = Pouca linha de código e somente uma pagina.
+Externo = Para uso de muitas paginas ou código longo.
+______________________________
+Aula 61, 62
+
+Importar BD com php / Mysqli
+
+Aula 58,59,60
+
+Exportar BD com php e Mysqli
+60
+Parte 3
+59
+Parte 2
+58
+Parte 1
+enctype="multipart/form-data -> Para trabalhar com arquivo.
+___
+Aula 54, 55, 56, 57
+
+*Olhar projeto- 25,26,27
+
+CRUD 
+57
+Delete (Destruição)
+"DELETE FROM usuarios WHERE id='$id'";
+
+56
+Update (Atualização, Editar) -> fazer alteração do usúario
+
+55  
+Create (Criação)-> Cadastrar dados no Banco de Dados.
+$result_usuarios = "INSERT INTO usuarios(nome, email, situacao_id, niveis_acesso_id, create_)
+VALUES('$nome', '$email', '2', '3', NOW())";
+
+header(Location: projeto022_crud_listar.php"); -> Redicionamento de URL.
+unset($_SESSION['msg']); -> Destroi a mensagem, Depois do print, quando atualizar ela sai.
+obs:
+Em vez de usar: $id = $_GET['id'];
+Usar: $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+Chamar o arquivo conexão -> include_once("conexao.php");
+
+54
+Read (Consulta) -> Consultar dados no BD.
+SELECT * FROM usuarios
+___
+Aula 53
+
+COUNT() -> (Contar) Retorna o numero de linhas da pesquisa.
+SELECT COUNT(column name) FROM table_name WHERE condition;
+AVG() -> (Média) Retorna o valor médio de uma coluna numérica.
+SELECT AVG(qnt_acessos) AS qnt_acessos FROM usuarios";
+SUM() -> (Somar) Retorna a soma total de uma coluna numérica.
+SELECT SUM (column name) FROM usuarios WHERE condition;
+___
+Aula 47, 48, 49, 50, 51, 52
+
+47
+IN -> Permite especificar vários valores em uma cláusula WHERE.É a abreveatura do OR.
+SELECT column_name(s) FROM usuarios WHERE column_name IN (value1...);
+
+48
+BETWEEN -> É usado para selecionar valores dentro de um intervalo.
+SELECT column_name(s) FROM table_name Where column_name BETWEEN value1 AND value2;
+
+49
+Aliaes -> Fornece um nome temporário, que só existe durante a duração da consulta.
+SELECT column_name As aliases_name FROM usuarios;
+
+50
+INNER JOIN -> Seleciona registros que possuem valores corespondentes em ambas as Tabelas.
+SELECT column_name(s)FROM table1 INNER JOIN table 2 ON table1.column_name = table2.column_name.
+
+51
+LEFT JOIN -> Obtem os dados relacionados e não relacionados de duas tabelas.
+SELECT column_name(s) FROM table2 ON table1.column_name = table2.column_name;
+
+52
+RIGHT JOIN -> Obtem os dados relacionados e não relacionados de duas tabelas.
+SELECT column_name(s) FROM table2 ON table1.column_name = table2.column_name;
+
+__
+Aula 43, 44, 45, 46
+
+43
+INSERT INTO -> É para inserir novos registro em uma Tabela.(Inserir)
+INSERT INTO usuarios(column1, ...) VALUES(values1, values2...);
+NOW() = Pega a data e hora atual.
+
+44
+UPDATE -> É usado para atualizar registros em uma tabela(Alterar)
+UPDADE usuarios SET column1=value1,...WHERE some_column=some_value;
+
+45
+DELETE -> É usado para excluir registro de uma tabela.(Deletar)
+DELETE FROM table_name WHERE some_column=some_value;
+
+46
+LIKE -> É usado em uma cláusula WHERE para pesquisar um padrão especifico em uma coluna.
+SELECT column_name(s)FROM table_name WHERE column_name LIKE pattern;
+"SELECT * FROM usuarios WHERE nome LIKE '%t%'";
+           Usando % nos dois lados'%l%' = Tras todo o resultado com l.       
+           Usando % no lado esquerdo '%l' = Resultado esquerdo.
+           Usando % no lado direito 'l%' = Resultado lado direito.
+___
+Aula 36, 37, 38, 39, 40, 41 e 42.
+36
+Conexão do PHP com MySQLi
+Criar a conexão -> Tendo o servidor, o usuario"root", a senha"",
+e o nome da base ->$conn = mysqli_connect($servidor, $usuario, 
+$senha);
+$conn = sempre que chamar a conexão.
+
+37  NÃO CONSEGUI FAZER A CONEXÃO
+
+SELECT -> Buscar as informações no BD.
+1º SELECT -> as colunas para trazer -> FROM -> Nome da Tabela.
+mysqli_fetch_assoc() = pra ler as informações que estão dentro da variavel que vem da conexão.
+
+38 
+SELECT DISTINCT -> É usado para retornar valores distintos(Diferentes).
+SELECT DISTINCT coluna1, coluna2, FROM nome_tabela; 
+
+39
+LIMIT -> Usada para limitar de acordo com o numero indicado.
+SELECT * FROM nome_tabela LIMIT 3
+Limite indicado, De x a determinado x. Ex: Se buscar do 2 ao 4
+SELECT * FROM orders LIMIT 2 OFFSET 4
+
+40
+WHERE -> Para extrair os registros com o critério especifico.
+SELECT column1,...FROM usuarios WERE condition;
+
+41
+AND & OR -> Usados para filtrar registros com base em mais de uma condição.
+SELECT column1, ...FROM usuarios WHERE condition1 AND condition2 OR condition3
+
+42
+ORDER BY -> É usado para classificar o resultado por um ou mais colunas.
+SELECT column1,...FROM usuarios ORDER BY column1 ASC|DESC;
+
+___
+Aula 31, 32, 33, 34 e 35
+31
+Criar Base de dados
+CREATE DATABASE celke; (celke é o nome do banco de dados).
+ou Entra no phpMyAdmin -> Base de dados -> 
+Coleção -> utf8_unicode_ci e clicar em "Criar".
+32
+CREATE TABLE = A tabela é usada para armazenar informações.(Usar no plural).
+               Consiste em registros e coluna.
+Clicar na data base -> Criar tabela -> Colocar o nome da Tabela e a quantidade de Coluna.
+Deletar uma Tabela -> Seleciona-la -> Com os seleccionados -> 
+33
+PRIMARY KEY ->(Índice) identificar cada registro armazenado na Tabela.
+AUTO INCREMENT -> incrementa automaticamente cada ID sempre que uma nova linha é criada.
+NOT NULL -> coluna não pode ser nula.
+34
+Contém valores que correspondem aos valores na chave primária de outra tabela.
+Situação é o nome da coluna que fala se é chave estrangeira.
+Estrutura -> faz o relacionamento, pra isso tem que mudar o MyISam -> 
+-> abre a Tabela ex: usuarios -> Mais -> Opereações -> 
+-> Operações da Tabela -> InnoDB -> executar.
+Visão de situações -> Ver qual é a chave estrangeira que queremos usar -> 
+Vai até o final -> mais -> Índice -> ok. 
+35
+Como inserir valor predefinido para uma coluna -> adicionar o novo cadastro
+colocar desativado Ex, fazer que o novo usuário seja 2 de restrição.
+ex: usuario -> situação -> Mais -> Estrutura -> Predefinido -> Salvar
+Colocar o nivél de acesso tambem.
+___
+Aula 30
+
+phpMyAdmin = é um aplicativo para administração de MySQLi.
+Usuário: root
+Senha: "   "
+____
+Aula 27,28,29
+
+SQL - Linguagem para manipular os dados. Criar, incluir, apagar, consultar.
+MyQLi - Gerenciamento de Banco de Dados.
+
+___
+Aula 26
+
+Sessão
+session = Salvar variaveis(valor no servidor durante a uso no site.
+u
+___
+Aula 25
+
+Cookies = arquivo que são abertos no computador de usúarios
+para recuperar dados da paginas.ex: ver se o usuário logou, 
+ver se votou na enquete, carrinho de compras para armazenar os 
+produtos no carrinho.
+As informações são armazenado na url do computador.
+ex: setcookie("afiliado", "5533", (time() + (3 * 24 * 3600)));
+___
+Aula 23, 24
+
+Formulário GET / POST ->Melhor trabalhar com o methodo POST, pois não envia na URL da pagina.
+Get = Os dados são enviados na URL da página.
+Post = Transmite os dados dos formulários através 
+do corpo da mensagem encaminhada ao servidor.
+
+Fazer formulário = <input type="text" name=" " placeholder=" "
+required>
+required = Campo obrigatório.
+type="submit" = Botão.
+____
+Aula 20, 21, 22
+
+Funções = Organizar os códigos e evita repetir o código na mesma tarefa.
+Função com parâmetro =  Passagem por valor -> caso o conteúdo da vaiável seja modificado, essa modificação
+não afeta a variável original.
+                     = Passagem por referencia o valor é alterado.
+Função Recursivas = São as que chamam a si mesma.
+___
+Aula 16,17,18,19
+
+Comandos de repetição -> Executar um conjunto de repetição
+com quantidade determinada de vezes.
+
+-while = É utilizado para testar uma condição e executar um comando verdadeiro.
+-do while = semelhante ao while mas a expressão é testada ao final do bloco de comando.
+-For = Inicialização, Condição, Incremento
+       ($c = 1;       $c <= 10;      $c++);
+-Foreach = Fornece um modo mais facíl de navegar entre os elementos de um array.
+___
+Aula 15
+
+Switch = é utilizado para comparar uma variável com diversos valores e executar diferente diferente dependendo do valor d variável.
+É mais rapido que o if quando tem somente uma variável
+__
+Aula 14
+
+Elseif = Junção do if e do else, Para funcionar o if tem que ser falso e faz uma comparação.
+___
+Aula 13
+
+Else = é utilizado quando a expressão if retorna falso.
+___
+Aula 12
+
+Estrutura de controle
+if = Avalia a condição e depois execulta.
+____
+Aula 11
+
+Operadores Lógicos
+
+And = E
+Or = Ou
+Xor = Ou
+! = Não
+&& = E
+|| = ou
+
+___
+Aula 10
+
+Operadores de compareação
+== igual a
+!= Diferente de
+< Menor
+> Maior
+<= Maior ou igual
+>= Menor ou igual
+		<?php
+		$a = 10;
+		$b = 8;
+		
+		if($a == $b){
+			echo "São iguais: $a e $b";			
+		}else{
+			echo"<br>Falso <br> São diferentes: $a e $b"; 
+		}
+
+		?>
+___
+Aula 9
+Operadores Incremento/Decremento
+-  Troca o sinal do operador
+++ Incrementa o valor do operador
+-- Decrementa o valor do operador
+___
+Aula 8
+
+Operadores Atribuição
+= -> Atribuição simples
++= -> Com adição
+-= -> Com subtração
+*= -> Com multiplicação
+/= -> Com divisão
+%= -> Com modulo
+.= -> Com contenação
+ex: 
+$a = 2
+$a += $b; -> $a = $a + $b;
+___
+Aula 7
+
+Operadores Aritméticos
+Adição +, Subtração -, Multiplicação *, Divisão /, Modulo %.
+
+number_format = Coloca a virgula e o ponto. ex: 2,",",".");
+ex: (2 = Numeros depois da última virgula, ","= Ultima virgila, "." = Milhar e continua pontiando.
+___
+Aula 6
+
+Variável Explicitas
+
+Concatenar = Fora do "", ex; echo "Numero:" . $n;
+var_dump = 
+echo = Imprime o resultado.
+var_dump($n) = Imprime a variavel e indica qual o tipo da variavel.ex:var_dump($nome, $id);
+Conversão de forma Explicita = $r = 13; $r = (double) $r; var_dump($r);
+
+
+___
+Aula 5 
+
+Variável = Armazena uma informação.
+
+
+
+PHP
+
