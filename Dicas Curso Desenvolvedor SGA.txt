@@ -20,6 +20,8 @@ ___
   http://localhost/sga1/home
   PHP - Sistema
   http://localhost/sga1/adm/
+   Login
+   http://localhost/sga1/adm/acesso/login
 ____ 
 
 
@@ -82,6 +84,13 @@ Bootstrap
 
 Seção 8
 
+Aula 174 - Pagina para validar o login com o php
+09:00
+
+Aula 173 - Criar pagina de login
+
+Aula 172 - Bloquear acesso a pagina do ADM
+
 Aula 169 - Criar URL Amigavel
 
 Aula 168 - Apresentação
@@ -137,7 +146,7 @@ Aula 153 - Preencher o acordion com informações no BD
 
 Aula 154 - Criar a página sobre empresa com registro no BD.
 
-Aula 163 - Criar o formulário de conato
+Aula 163 - Criar o formulário de contato
 
 Aula 164 - 
 

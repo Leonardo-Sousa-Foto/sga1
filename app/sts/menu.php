@@ -16,7 +16,7 @@
                         <a class="nav-link" href="<?php echo pg; ?>/sobre_empresa">Sobre a empresa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="file:///C:/xampp/htdocs/sga1/login.html" target="_blank">Entrar no sistema</a>
+                        <a class="nav-link" href="http://localhost/sga1/adm/acesso/login" target="_blank">Entrar no sistema</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo pg; ?>/contato">Contato</a>
