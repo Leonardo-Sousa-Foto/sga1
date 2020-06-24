@@ -4,4 +4,5 @@ if(!isset($seg)){
 }
 
 echo "Bem vindo a HOME!<br>";
+echo "<a href='".pg."/acesso/sair'>Sair</a><br>";
 

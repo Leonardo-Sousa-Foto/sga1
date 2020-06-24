@@ -84,8 +84,13 @@ Bootstrap
 
 Seção 8
 
+Aula 177 - Permitir acesso a página ao nível de acesso
+
+Aula 176 - Criar nivel de acesso login
+
+Aula 175 - Validar o login com o PHP
+
 Aula 174 - Pagina para validar o login com o php
-09:00
 
 Aula 173 - Criar pagina de login
 
