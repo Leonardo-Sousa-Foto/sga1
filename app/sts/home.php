@@ -70,7 +70,7 @@ include_once 'app/sts/header.php';
                 <h2 class = "display-4 text-center" style = "margin-bottom: 40px;">SGA- Sistema de gerenciamento de arquivos
                 </h2>
                 <p>Somos a maior rede nacional na área de gestão documental.</p>
-                <p><a class = "btn btn-primary btn-lg" href = "/C:/xampp/htdocs/sga1/login.html" target = "_blank"
+                <p><a class = "btn btn-primary btn-lg" href = "http://localhost/sga1/adm/acesso/login" target = "_blank"
                       role = "button">Entrar no sistema &raquo;
                     </a></p>
 
