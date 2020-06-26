@@ -16,7 +16,7 @@ ___
   https://getbootstrap.com/docs/4.5/getting-started/introduction/
   PHPAdmim
   http://localhost/phpmyadmin/  
-  PHP
+  PHP - Site
   http://localhost/sga1/home
   PHP - Sistema
   http://localhost/sga1/adm/
@@ -83,6 +83,18 @@ __
 Bootstrap
 
 Seção 8
+
+Aula 183 - 00:00
+
+Aula 182 - Liberar e bloquear itens do menu vertical
+
+Aula 181 - Criar menu vertical no administrativo Bootstrap
+
+Aula 180 - Inserir icone do usuario no cabeçalho
+
+Aula 179 - Criar cabeçalho do adm
+
+Aula 178 - Pagina para sair do adm
 
 Aula 177 - Permitir acesso a página ao nível de acesso
 

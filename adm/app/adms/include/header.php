@@ -1,4 +1,8 @@
 <?php
+if (!isset($seg)) {
+    exit;
+}
+
 $result_user_hd = "SELECT id, nome, imagem FROM adms_usuarios WHERE id='".$_SESSION['id']."' LIMIT 1";
 $resultado_user_hd = mysqli_query($conn, $result_user_hd);
 $row_user_hd = mysqli_fetch_assoc( $resultado_user_hd);
@@ -26,7 +30,7 @@ $prim_nome = $nome[0];
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#"><i class="fa fa-user fa-fw"></i>Perfil</a>
-                    <a class="dropdown-item" href="<?php echo pg; ?>/acesso/sair"><i class="fa fa-sign-out fa-fw"></i>Sair</a>
+                    <a class="dropdown-item" href="<?php echo pg; ?>/acesso/sair"><i class="fas fa-sign-out-alt"></i>Sair</a>
                 </div>
             </li>
         </ul>
