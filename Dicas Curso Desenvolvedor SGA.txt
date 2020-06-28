@@ -84,7 +84,9 @@ Bootstrap
 
 Seção 8
 
-Aula 183 - 00:00
+Aula 183 - Criar menu dropdown vertical
+Obs: Meu id do super administrador é 3 ao invés de 2.
+11:45
 
 Aula 182 - Liberar e bloquear itens do menu vertical
 
