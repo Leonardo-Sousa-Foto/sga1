@@ -83,10 +83,24 @@ __
 Bootstrap
 
 Seção 8
+Aula 190 - 
+00:00
+
+Aula 189 - Criar a pagina para ver o nivel de acesso
+
+Aula 188 - Apresentar e ocultar botões
+
+Aula 187 - Criar paginação com php
+
+Aula 186 - Listar nivel de acesso
+
+Aula 185 - Criar link no menu para sair do administrativo
+
+Aula 184 - Imprimir dropdown com PHP
 
 Aula 183 - Criar menu dropdown vertical
 Obs: Meu id do super administrador é 3 ao invés de 2.
-11:45
+     Aqui temos 2 submenu.
 
 Aula 182 - Liberar e bloquear itens do menu vertical
 

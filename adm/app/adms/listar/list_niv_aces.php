@@ -19,13 +19,14 @@ include_once 'app/adms/include/head.php';
                     <div class="mr-auto p-2">
                         <h2 class="display-4 titulo">Listar nível de acesso</h2>
                     </div>
-                    <a href="sis_cadastrar.html">
-                        <div class="p-2">
-                            <button class="btn btn-outline-success btn-sm">
-                                Cadastrar
-                            </button>                                
-                        </div>
-                    </a>
+                    <div class="p-2">
+                        <?php
+                        $btn_cad = carregar_btn('cadastrar/cad_niv_aces', $conn);
+                        if ($btn_cad) {
+                            echo "<a href='" . pg . "/cadastrar/cad_niv_aces' class='btn btn-outline-success btn-sm'>Cadastrar</a>";
+                        }
+                        ?>
+                    </div>
                 </div>
                 <div class="alert alert-success" role="alert">
                     Usuário apagado com secesso!
@@ -39,7 +40,7 @@ include_once 'app/adms/include/head.php';
                 $pagina_atual = filter_input(INPUT_GET, 'pagina', FILTER_SANITIZE_NUMBER_INT);
                 $pagina = (!empty($pagina_atual)) ? $pagina_atual : 1;
                 //Setar a quantidade de página
-                $qnt_result_pg = 1;
+                $qnt_result_pg = 40;
                 //Calcular 0 inicio visualização
                 $inicio = ($qnt_result_pg * $pagina) - $qnt_result_pg;
                 $resul_niv_aces = "SELECT * FROM adms_niveis_acessos WHERE ordem >= '" . $_SESSION['ordem'] . "' ORDER BY ordem ASC LIMIT $inicio, $qnt_result_pg";
@@ -66,19 +67,39 @@ include_once 'app/adms/include/head.php';
                                         <td class="d-none d-sm-table-cell"><?php echo $row_niv_aces['ordem'] ?></td>
                                         <td class="text-center">
                                             <span class="d-none d-md-block">
-                                                <a href="sis_visualizar.html" class="btn btn-outline-primary btn-sm">Visualizar</a>
-                                                <a href="sis_editar.html" class="btn btn-outline-warning btn-sm">Editar</a>
-                                                <a href="sis_apagar.html" class="btn btn-outline-danger btn-sm" data-toggle="modal" 
-                                                   data-target="#apagarRegistro">Apagar</a>
+                                                <?php
+                                                $btn_vis = carregar_btn('visualizar/vis_niv_aces', $conn);
+                                                if ($btn_vis) {
+                                                    echo "<a href='" . pg . "/visualizar/vis_niv_aces?id=".$row_niv_aces['id']."' class='btn btn-outline-primary btn-sm'>Visualizar</a> ";
+                                                }
+                                                $btn_edit = carregar_btn('editar/edit_niv_aces', $conn);
+                                                if ($btn_edit) {
+                                                    echo "<a href='" . pg . "/editar/edit_niv_aces?id=".$row_niv_aces['id']."' class='btn btn-outline-warning btn-sm'>Editar</a> ";
+                                                }
+                                                $btn_apagar = carregar_btn('processa/apagar_niv_aces', $conn);
+                                                if ($btn_apagar) {
+                                                    echo "<a href='" . pg . "/processa/apagar_niv_aces' class='btn btn-outline-danger btn-sm' data-toggle='modal' 
+                                                   data-target='#apagarRegistro'>Apagar</a>";
+                                                }
+                                                ?>
+
                                             </span>
                                             <div class="dropdown d-block d-md-none">
                                                 <button class="btn btn-primary dropdown-toggle btn-sm" type="button" id="acoesListar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     Ações
                                                 </button>
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="acoesListar">
-                                                    <a class="dropdown-item" href="sis_visualizar.html">Visualizar</a>
-                                                    <a class="dropdown-item" href="sis_editar.html">Editar</a>
-                                                    <a class="dropdown-item" href="sis_apagar.html" data-toggle="modal" data-target="#apagarRegistro">Apagar</a>
+                                                    <?php 
+                                                    if ($btn_vis) {
+                                                        echo "<a class='dropdown-item' href='" . pg . "/visualizar/vis_niv_aces?id=".$row_niv_aces['id']."'>Visualizar</a>";
+                                                    }
+                                                    if ($btn_edit){
+                                                        echo "<a class='dropdown-item' href='" . pg . "/editar/edit_niv_aces?id=".$row_niv_aces['id']."'>Editar</a>";
+                                                    }
+                                                    if ($btn_apagar){
+                                                        echo "  <a class='dropdown-item' href='" . pg . "/processa/apagar_niv_aces' data-toggle='modal' data-target='#apagarRegistro'>Apagar</a>";
+                                                    }
+                                                    ?>                                                                                                                                                         
                                                 </div>
                                             </div>
                                         </td>
