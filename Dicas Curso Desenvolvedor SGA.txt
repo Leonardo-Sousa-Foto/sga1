@@ -83,8 +83,17 @@ __
 Bootstrap
 
 Seção 8
-Aula 190 - 
-00:00
+
+Aula 194 - Editar as informações do nivel de acesso no BD
+
+Aula 193 - Formulário para editar nível de acesso.
+
+Aula 192 - Inserir nivel de acesso no banco de dados.
+
+Aula 191 - Validar campo vazio com PHP
+
+Aula 190 - Criar formulário para cadastar nível de acesso.
+obs - pagina de cadastro para nivel de acesso.
 
 Aula 189 - Criar a pagina para ver o nivel de acesso
 

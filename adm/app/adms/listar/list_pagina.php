@@ -12,7 +12,7 @@ include_once 'app/adms/include/head.php';
         <?php
         include_once 'app/adms/include/menu.php';
 
-        echo "listar paginas<br>";
+        echo "listar documentos<br>";
         
         include_once 'app/adms/include/rodape_lib.php';
         ?>

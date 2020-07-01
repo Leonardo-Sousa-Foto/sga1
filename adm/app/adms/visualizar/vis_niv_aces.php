@@ -13,7 +13,12 @@ include_once 'app/adms/include/head.php';
         include_once 'app/adms/include/menu.php';
 
         $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
-        $result_niv_aces = "SELECT * FROM adms_niveis_acessos WHERE ordem >= '" . $_SESSION['ordem'] . "' AND id=$id ORDER BY ordem ASC LIMIT 1";
+        if ($_SESSION['adms_niveis_acesso_id'] == 1) {
+
+            $result_niv_aces = "SELECT * FROM adms_niveis_acessos WHERE id=$id ORDER BY ordem ASC LIMIT 1";
+        } else {
+            $result_niv_aces = "SELECT * FROM adms_niveis_acessos WHERE ordem > '" . $_SESSION['ordem'] . "' AND id=$id ORDER BY ordem ASC LIMIT 1";
+        }
         $resultado_niv_aces = mysqli_query($conn, $result_niv_aces);
         ?>
         <!--Dashboard-->
@@ -35,7 +40,8 @@ include_once 'app/adms/include/head.php';
                         }
                         $btn_apagar = carregar_btn('processa/apagar_niv_aces', $conn);
                         if ($btn_apagar) {
-                            echo "<a href='" . pg . "/processa/apagar_niv_aces' class='btn btn-outline-danger btn-sm' data-toggle='modal' 
+                            echo "<a href='" . pg . "/processa/apagar_niv_aces' 
+                                class='btn btn-outline-danger btn-sm' data-toggle='modal' 
                                                    data-target='#apagarRegistro'>Apagar</a>";
                         }
                         ?>
@@ -59,11 +65,11 @@ include_once 'app/adms/include/head.php';
                         <dd class="col-sm-9"><?php echo date('d/m/y H:i:s', strtotime($row_niv_aces['created'])); ?></dd>
 
                         <dt class="col-sm-3 text-truncate">Data do cadastro</dt>
-                        <dd class="col-sm-9"><?php 
-                        if(!empty($row_niv_aces['modified'])){                            
-                            echo date('d/m/y H:i:s', strtotime($row_niv_aces['modified'])); 
-                          }
-                          ?></dd>
+                        <dd class="col-sm-9"><?php
+                if (!empty($row_niv_aces['modified'])) {
+                    echo date('d/m/y H:i:s', strtotime($row_niv_aces['modified']));
+                }
+                    ?></dd>
                     </dl>
                     <?php
                 } else {
