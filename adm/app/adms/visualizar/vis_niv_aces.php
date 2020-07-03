@@ -40,8 +40,8 @@ include_once 'app/adms/include/head.php';
                         }
                         $btn_apagar = carregar_btn('processa/apagar_niv_aces', $conn);
                         if ($btn_apagar) {
-                            echo "<a href='" . pg . "/processa/apagar_niv_aces' 
-                                class='btn btn-outline-danger btn-sm' data-toggle='modal' 
+                            echo "<a href='" . pg . "/processa/apagar_niv_aces  
+                                ' class='btn btn-outline-danger btn-sm' data-toggle='modal' 
                                                    data-target='#apagarRegistro'>Apagar</a>";
                         }
                         ?>

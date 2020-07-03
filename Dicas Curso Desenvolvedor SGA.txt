@@ -82,7 +82,15 @@ __
 
 Bootstrap
 
+SGA 1
+188 
+00:00 2/7
+
 Seção 8
+
+Aula 196 - Bloquear o apagar nivel de acesso com usuário
+
+Aula 195 - Apagar nivel de acesso
 
 Aula 194 - Editar as informações do nivel de acesso no BD
 
@@ -96,6 +104,7 @@ Aula 190 - Criar formulário para cadastar nível de acesso.
 obs - pagina de cadastro para nivel de acesso.
 
 Aula 189 - Criar a pagina para ver o nivel de acesso
+*
 
 Aula 188 - Apresentar e ocultar botões
 

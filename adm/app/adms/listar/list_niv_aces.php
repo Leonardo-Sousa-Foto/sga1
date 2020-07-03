@@ -29,7 +29,7 @@ include_once 'app/adms/include/head.php';
                     </div>
                 </div>
                 <?php
-                if(isset($_SESSION['msg'])){
+                if (isset($_SESSION['msg'])) {
                     echo $_SESSION['msg'];
                     unset($_SESSION['msg']);
                 }
@@ -41,12 +41,12 @@ include_once 'app/adms/include/head.php';
                 $qnt_result_pg = 40;
                 //Calcular 0 inicio visualização
                 $inicio = ($qnt_result_pg * $pagina) - $qnt_result_pg;
-                 if ($_SESSION['adms_niveis_acesso_id'] == 1) {
-                $resul_niv_aces = "SELECT * FROM adms_niveis_acessos ORDER BY ordem ASC LIMIT $inicio, $qnt_result_pg";
-                 }else{
-                      $resul_niv_aces = "SELECT * FROM adms_niveis_acessos WHERE ordem > '" . $_SESSION['ordem'] . "' ORDER BY ordem ASC LIMIT $inicio, $qnt_result_pg";
-                 }
-                 
+                if ($_SESSION['adms_niveis_acesso_id'] == 1) {
+                    $resul_niv_aces = "SELECT * FROM adms_niveis_acessos ORDER BY ordem ASC LIMIT $inicio, $qnt_result_pg";
+                } else {
+                    $resul_niv_aces = "SELECT * FROM adms_niveis_acessos WHERE ordem > '" . $_SESSION['ordem'] . "' ORDER BY ordem ASC LIMIT $inicio, $qnt_result_pg";
+                }
+
                 $resultado_niv_aces = mysqli_query($conn, $resul_niv_aces);
                 if (($resultado_niv_aces) AND ( $resultado_niv_aces->num_rows != 0)) {
                     ?>
@@ -81,8 +81,8 @@ include_once 'app/adms/include/head.php';
                                                 }
                                                 $btn_apagar = carregar_btn('processa/apagar_niv_aces', $conn);
                                                 if ($btn_apagar) {
-                                                    echo "<a href='" . pg . "/processa/apagar_niv_aces' class='btn btn-outline-danger btn-sm' data-toggle='modal' 
-                                                   data-target='#apagarRegistro'>Apagar</a>";
+                                                    echo "<a href='" . pg . "/processa/apagar_niv_aces?id=" . $row_niv_aces['id'] . "' class='btn btn-outline-
+                                                            danger btn-sm' data-confirm='Tem certeza que deseja excluir o item selecionado?>Apagar</a> ";
                                                 }
                                                 ?>
 
@@ -100,7 +100,7 @@ include_once 'app/adms/include/head.php';
                                                         echo "<a class='dropdown-item' href='" . pg . "/editar/edit_niv_aces?id=" . $row_niv_aces['id'] . "'>Editar</a>";
                                                     }
                                                     if ($btn_apagar) {
-                                                        echo "  <a class='dropdown-item' href='" . pg . "/processa/apagar_niv_aces' data-toggle='modal' data-target='#apagarRegistro'>Apagar</a>";
+                                                        echo "  <a class='dropdown-item' href='" . pg . "/processa/apagar_niv_aces?id=" . $row_niv_aces['id'] . "'>Apagar</a>";
                                                     }
                                                     ?>                                                                                                                                                         
                                                 </div>
