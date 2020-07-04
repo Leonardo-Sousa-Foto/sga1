@@ -18,13 +18,18 @@ include_once 'app/adms/include/head.php';
                     <div class="mr-auto p-2">
                         <h2 class="display-4 titulo">Listar documentos arquivados</h2>
                     </div>
-                    <a href="cadastrar.html">
-                        <div class="p-2">
-                            <button class="btn btn-outline-success btn-sm">
-                                Cadastrar
-                            </button>                                
-                        </div>
-                    </a>
+                    <div class="p-2">
+
+                        <?php
+                        $btn_cad = carregar_btnd('cadastrar/cad_pagina', $conn);
+                        if ($btn_cad) {
+                            echo "<a href='" . pg . "/cadastrar/cad_pagina' class='btn btn-outline-success btn-sm'>Cadastrar</a>";
+                        }
+                        ?>
+
+
+                        </a>
+                    </div>
                 </div>
                 <div class="alert alert-success" role="alert">
                     Usuário apagado com sucesso!
@@ -70,10 +75,21 @@ include_once 'app/adms/include/head.php';
                                         <td class="d-none d-lg-table-cell"><?php echo $row_pagina['local_arquivo']; ?></td>
                                         <td class="text-center">
                                             <span class="d-none d-md-block">
-                                                <a href="visualizar.html" class="btn btn-outline-primary btn-sm">Visualizar</a>
-                                                <a href="editar.html" class="btn btn-outline-warning btn-sm">Editar</a>
-                                                <a href="apagar.html" class="btn btn-outline-danger btn-sm" data-toggle="modal" 
-                                                   data-target="#apagarRegistro">Apagar</a>
+                                                <?php
+                                                $btn_visd = carregar_btnd('visualizar/vis_pagina', $conn);
+                                                if ($btn_visd) {
+                                                    echo "<a href='" . pg . "/visualizar/vis_pagina?id".$row_pagina['id']."' class='btn btn-outline-primary btn-sm'>Visualizar</a> ";
+                                                }
+                                                $btn_editd = carregar_btnd('editar/edit_pagina', $conn);
+                                                if ($btn_editd) {
+                                                    echo "<a href='" . pg . "/editar/edit_pagina?id".$row_pagina['id']."' class='btn btn-outline-warning btn-sm'>Editar</a> ";
+                                                }
+                                                $btn_apagard = carregar_btnd('processa/apagar_pagina', $conn);
+                                                if ($btn_apagard) {
+                                                    echo "<a href='" . pg . "/processa/apagar_pagina' class='btn btn-outline-danger btn-sm' data-toggle'modal' 
+                                                   data-target='#apagarRegistro'>Apagar</a> ";
+                                                }
+                                                ?>
                                             </span>
                                             <div class="dropdown d-block d-md-none">
                                                 <button class="btn btn-primary dropdown-toggle btn-sm" type="button" id="acoesListar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -118,10 +134,10 @@ include_once 'app/adms/include/head.php';
                         echo"<li class='page-item active'>";
                         echo"<a class='page-link' href='#'>$pagina</a>";
                         echo "</li>";
-                        
-                        for($pag_dep = $pagina + 1; $pag_dep <= $pagina + $max_links; $pag_dep++){
-                            if($pag_dep <= $quantidade_pg){
-                            echo "<li class='page-item'><a class='page-link' href='" . pg . "/listar/list_pagina?pagina=$pag_dep'>$pag_dep</a></li>";
+
+                        for ($pag_dep = $pagina + 1; $pag_dep <= $pagina + $max_links; $pag_dep++) {
+                            if ($pag_dep <= $quantidade_pg) {
+                                echo "<li class='page-item'><a class='page-link' href='" . pg . "/listar/list_pagina?pagina=$pag_dep'>$pag_dep</a></li>";
                             }
                         }
 
@@ -133,21 +149,21 @@ include_once 'app/adms/include/head.php';
                         ?>
 
                     </div>
-    <?php
-} else {
-    ?>
+                    <?php
+                } else {
+                    ?>
                     <div class="alert alert-danger" role="alert">
                         Nenhum registro encontrado!
                     </div>
-    <?php
-}
-?>
+                    <?php
+                }
+                ?>
 
             </div>
         </div>
-<?php
-include_once 'app/adms/include/rodape_lib.php';
-?>
+        <?php
+        include_once 'app/adms/include/rodape_lib.php';
+        ?>
     </div>
 
 </body>

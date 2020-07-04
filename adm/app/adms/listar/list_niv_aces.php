@@ -38,7 +38,7 @@ include_once 'app/adms/include/head.php';
                 $pagina_atual = filter_input(INPUT_GET, 'pagina', FILTER_SANITIZE_NUMBER_INT);
                 $pagina = (!empty($pagina_atual)) ? $pagina_atual : 1;
                 //Setar a quantidade de página
-                $qnt_result_pg = 40;
+                $qnt_result_pg = 1;
                 //Calcular 0 inicio visualização
                 $inicio = ($qnt_result_pg * $pagina) - $qnt_result_pg;
                 if ($_SESSION['adms_niveis_acesso_id'] == 1) {
@@ -65,24 +65,23 @@ include_once 'app/adms/include/head.php';
                                 while ($row_niv_aces = mysqli_fetch_assoc($resultado_niv_aces)) {
                                     ?>
                                     <tr>
-                                        <th><?php echo $row_niv_aces['id'] ?></th>
-                                        <td><?php echo $row_niv_aces['nome'] ?></td>
+                                        <th><?php echo $row_niv_aces['id']; ?></th>
+                                        <td><?php echo $row_niv_aces['nome']; ?></td>
                                         <td class="d-none d-sm-table-cell"><?php echo $row_niv_aces['ordem'] ?></td>
                                         <td class="text-center">
                                             <span class="d-none d-md-block">
                                                 <?php
                                                 $btn_vis = carregar_btn('visualizar/vis_niv_aces', $conn);
                                                 if ($btn_vis) {
-                                                    echo "<a href='" . pg . "/visualizar/vis_niv_aces?id=" . $row_niv_aces['id'] . "' class='btn btn-outline-primary btn-sm'>Visualizar</a> ";
+                                                    echo "<a href='" . pg . "/visualizar/vis_niv_aces?id=".$row_niv_aces['id']."' class='btn btn-outline-primary btn-sm'>Visualizar</a> ";
                                                 }
                                                 $btn_edit = carregar_btn('editar/edit_niv_aces', $conn);
                                                 if ($btn_edit) {
-                                                    echo "<a href='" . pg . "/editar/edit_niv_aces?id=" . $row_niv_aces['id'] . "' class='btn btn-outline-warning btn-sm'>Editar</a> ";
+                                                    echo "<a href='" . pg . "/editar/edit_niv_aces?id=".$row_niv_aces['id']."'' class='btn btn-outline-warning btn-sm'>Editar</a> ";
                                                 }
                                                 $btn_apagar = carregar_btn('processa/apagar_niv_aces', $conn);
                                                 if ($btn_apagar) {
-                                                    echo "<a href='" . pg . "/processa/apagar_niv_aces?id=" . $row_niv_aces['id'] . "' class='btn btn-outline-
-                                                            danger btn-sm' data-confirm='Tem certeza que deseja excluir o item selecionado?>Apagar</a> ";
+                                                    echo "<a href='" . pg . "/processa/apagar_niv_aces' class='btn btn-outline-danger btn-sm' data-toggle='modal' data-target='#apagarRegistro'>Apagar</a> ";
                                                 }
                                                 ?>
 

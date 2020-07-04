@@ -82,10 +82,14 @@ __
 
 Bootstrap
 
-SGA 1
-188 
-00:00 2/7
+SGA 1 Parte do documento
 
+189 - Ver detalhe do documento
+5:00
+188 - Cadastrar pagina = 15
+187 - Criado a paginação
+186 - Criado a pagina de nivel de acesso
+_____
 Seção 8
 
 Aula 196 - Bloquear o apagar nivel de acesso com usuário

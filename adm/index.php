@@ -6,6 +6,7 @@ include_once './config/config.php';
 include_once './config/conexao.php';
 include_once './lib/lib_valida.php';
 include_once './lib/lib_permissao.php';
+include_once './lib/lib_permissaod.php';
 
 $url = filter_input(INPUT_GET, 'url', FILTER_SANITIZE_STRING);
 $url_limpa = limparURL($url);
