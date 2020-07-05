@@ -26,19 +26,14 @@ include_once 'app/adms/include/head.php';
                             echo "<a href='" . pg . "/cadastrar/cad_pagina' class='btn btn-outline-success btn-sm'>Cadastrar</a>";
                         }
                         ?>
-
-
-                        </a>
                     </div>
                 </div>
-                <div class="alert alert-success" role="alert">
-                    Usuário apagado com sucesso!
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!--Tabela lista usuários-->
                 <?php
+                if(isset($_SESSION['msg'])){
+                    echo $_SESSION['msg'];
+                    unset($_SESSION['msg']);
+                }
+                //Receber o numero da pagina
                 $pagina_atual = filter_input(INPUT_GET, 'pagina', FILTER_SANITIZE_NUMBER_INT);
                 $pagina = (!empty($pagina_atual)) ? $pagina_atual : 1;
 
@@ -78,11 +73,11 @@ include_once 'app/adms/include/head.php';
                                                 <?php
                                                 $btn_visd = carregar_btnd('visualizar/vis_pagina', $conn);
                                                 if ($btn_visd) {
-                                                    echo "<a href='" . pg . "/visualizar/vis_pagina?id".$row_pagina['id']."' class='btn btn-outline-primary btn-sm'>Visualizar</a> ";
+                                                    echo "<a href='" . pg . "/visualizar/vis_pagina?id=" . $row_pagina['id'] . "' class='btn btn-outline-primary btn-sm'>Visualizar</a> ";
                                                 }
                                                 $btn_editd = carregar_btnd('editar/edit_pagina', $conn);
                                                 if ($btn_editd) {
-                                                    echo "<a href='" . pg . "/editar/edit_pagina?id".$row_pagina['id']."' class='btn btn-outline-warning btn-sm'>Editar</a> ";
+                                                    echo "<a href='" . pg . "/editar/edit_pagina?id=" . $row_pagina['id'] . "' class='btn btn-outline-warning btn-sm'>Editar</a> ";
                                                 }
                                                 $btn_apagard = carregar_btnd('processa/apagar_pagina', $conn);
                                                 if ($btn_apagard) {
@@ -96,9 +91,18 @@ include_once 'app/adms/include/head.php';
                                                     Ações
                                                 </button>
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="acoesListar">
-                                                    <a class="dropdown-item" href="visualizar.html">Visualizar</a>
-                                                    <a class="dropdown-item" href="editar.html">Editar</a>
-                                                    <a class="dropdown-item" href="apagar.html" data-toggle="modal" data-target="#apagarRegistro">Apagar</a>
+                                                    <?php
+                                                    if ($btn_visd) {
+                                                        echo "<a class='dropdown-item' href='" . pg . "/visualizar/vis_pagina?id=" . $row_pagina['id'] . "'>Visualizar</a>";
+                                                    }
+                                                    if ($btn_editd) {
+                                                        echo "<a class='dropdown-item' href='" . pg . "/editar/edit_pagina?id=" . $row_pagina['id'] . "'>Editar</a>";
+                                                    }
+                                                    if ($btn_apagard) {
+                                                        echo "<a class='dropdown-item' href='apagar.html' data-toggle='modal' data-target='#apagarRegistro'>Apagar</a>";
+                                                    }                                                 
+                                                    ?>                                                                                                        
+                                                    
                                                 </div>
                                             </div>
                                         </td>
