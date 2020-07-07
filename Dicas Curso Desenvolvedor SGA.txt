@@ -84,11 +84,19 @@ Bootstrap
 
 SGA 1 Parte do documento
 
+194 - 00:00
+193 - Criado a pagina para editar documento
+192 - Feito o crud para cadastrar documentos 
+obs:  //Pesquisar a ultima ordem
+
+191 - Validar os campo vazio com php
+190 - Criado formulário para cadastrar documentos
 189 - Ver detalhe do documento
-5:00
 188 - Cadastrar pagina = 15
 187 - Criado a paginação
 186 - Criado a pagina de nivel de acesso
+
+233 Cadastro de usuarios
 _____
 Seção 8
 

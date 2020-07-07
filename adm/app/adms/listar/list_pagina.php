@@ -81,8 +81,8 @@ include_once 'app/adms/include/head.php';
                                                 }
                                                 $btn_apagard = carregar_btnd('processa/apagar_pagina', $conn);
                                                 if ($btn_apagard) {
-                                                    echo "<a href='" . pg . "/processa/apagar_pagina' class='btn btn-outline-danger btn-sm' data-toggle'modal' 
-                                                   data-target='#apagarRegistro'>Apagar</a> ";
+                                                    echo "<a href='" . pg . "/processa/apagar_pagina?id=" . $row_pagina['id'] . "' class='btn btn-outline-danger btn-sm'
+                                                            data-confirm='Tem certeza que deseja excluir o documento?'>Apagar</a> ";
                                                 }
                                                 ?>
                                             </span>
