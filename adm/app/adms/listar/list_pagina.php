@@ -38,7 +38,7 @@ include_once 'app/adms/include/head.php';
                 $pagina = (!empty($pagina_atual)) ? $pagina_atual : 1;
 
                 //Setar a quantidade de intens por pagina
-                $qnt_result_pg = 3;
+                $qnt_result_pg = 5;
 
                 //Calcular o incio visualização
                 $inicio = ($qnt_result_pg * $pagina) - $qnt_result_pg;
@@ -81,8 +81,7 @@ include_once 'app/adms/include/head.php';
                                                 }
                                                 $btn_apagard = carregar_btnd('processa/apagar_pagina', $conn);
                                                 if ($btn_apagard) {
-                                                    echo "<a href='" . pg . "/processa/apagar_pagina?id=" . $row_pagina['id'] . "' class='btn btn-outline-danger btn-sm'
-                                                            data-confirm='Tem certeza que deseja excluir o documento?'>Apagar</a> ";
+                                                    echo "<a href='" . pg . "/processa/apagar_pagina?id=" . $row_pagina['id'] . "' class='btn btn-outline-danger btn-sm'>Apagar</a> ";
                                                 }
                                                 ?>
                                             </span>
@@ -99,7 +98,7 @@ include_once 'app/adms/include/head.php';
                                                         echo "<a class='dropdown-item' href='" . pg . "/editar/edit_pagina?id=" . $row_pagina['id'] . "'>Editar</a>";
                                                     }
                                                     if ($btn_apagard) {
-                                                        echo "<a class='dropdown-item' href='apagar.html' data-toggle='modal' data-target='#apagarRegistro'>Apagar</a>";
+                                                        echo "<a class='dropdown-item' href='" . pg . "/processa/apagar_pagina?id=" . $row_pagina['id'] . "'>Apagar</a>";
                                                     }                                                 
                                                     ?>                                                                                                        
                                                     

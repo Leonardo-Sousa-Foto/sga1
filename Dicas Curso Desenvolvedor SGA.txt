@@ -84,7 +84,17 @@ Bootstrap
 
 SGA 1 Parte do documento
 
-194 - 00:00
+232 - 00:00
+
+231 - 
+	Obs. até 10:15 ok
+
+209 - Inserir o acesso a página para niveis de acesso.
+      obs. Dar uma olhada.
+
+
+195 - Apagar um documento. 
+194 - Editar as informações de acesso no BD
 193 - Criado a pagina para editar documento
 192 - Feito o crud para cadastrar documentos 
 obs:  //Pesquisar a ultima ordem

@@ -29,7 +29,7 @@ include_once 'app/adms/include/head.php';
                             <div class="card-body">
                                 <i class="fa fa-users fa-3x"></i>
                                 <h6 class="card-title">Usuários</h6>
-                                <h2 class="lead">147</h2>
+                                <h2 class="lead">25</h2>
                             </div>
                         </div>
                     </div>
@@ -38,8 +38,8 @@ include_once 'app/adms/include/head.php';
                         <div class="card bg-danger text-white">                               
                             <div class="card-body">
                                 <i class="fa fa-file fa-3x"></i>
-                                <h6 class="card-title">Artigo</h6>
-                                <h2 class="lead">63</h2>
+                                <h6 class="card-title">Documento</h6>
+                                <h2 class="lead">15</h2>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ include_once 'app/adms/include/head.php';
                             <div class="card-body">
                                 <i class="fa fa-eye fa-3x"></i>
                                 <h6 class="card-title">Visitas</h6>
-                                <h2 class="lead">648</h2>
+                                <h2 class="lead">248</h2>
                             </div>
                         </div>
                     </div>
@@ -59,8 +59,8 @@ include_once 'app/adms/include/head.php';
                         <div class="card bg-info text-white">                               
                             <div class="card-body">
                                 <i class="fa fa-comments fa-3x"></i>
-                                <h6 class="card-title">Usuários</h6>
-                                <h2 class="lead">49</h2>
+                                <h6 class="card-title">Comentários</h6>
+                                <h2 class="lead">39</h2>
                             </div>
                         </div>
                     </div>

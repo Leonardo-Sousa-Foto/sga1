@@ -59,7 +59,7 @@ if (!isset($seg)) {
         }
         ?>
 
-        <!--Sair com icone
-        <li><a href="http://localhost/sga1/adm/acesso/login"><i class="fas fa-sign-out-alt"></i>Sair</a></li>-->
+        <!--Sair com icone-->
+        <li><a href="http://localhost/sga1/adm/acesso/login"><i class="fas fa-sign-out-alt"></i>Sair</a></li>
     </ul>
 </nav>

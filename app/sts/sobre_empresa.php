@@ -43,7 +43,7 @@ função das características e necessidades do nosso mercado, desenvolvemos e a
                             <div class="col-md-7 text_dois">
                                 <h2 class="featurette-heading">Sobre o software.</h2>
                                 <p class="lead">É um software que visa organizar de forma segura e útil os arquivos 
-                                    físicos e digitalizado de empresas que possuem este serviço.<br>O desafio é que muitos documentos acabam se perdendo e muitas vezes 
+                                    físicos e digitalizados das empresas que possuem este serviço.<br>O desafio é que muitos documentos acabam se perdendo e muitas vezes 
 são  extraviados e o sistema solução esse problema. </p>
                             </div>
                             <div class="col-md-5 img_dois">
